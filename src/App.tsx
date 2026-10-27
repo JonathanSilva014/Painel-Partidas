@@ -1,5 +1,6 @@
 
 import UserGreeting from "./components/userGreeting";
+import Soma from "./components/soma";
 
 export default function App() {
   const user = {
@@ -9,6 +10,9 @@ export default function App() {
   };
 
   return (
-    <UserGreeting user={user} />
+    <>
+      <UserGreeting user={user} />
+      <Soma a={10} b={20} />
+    </>
   );
 }
